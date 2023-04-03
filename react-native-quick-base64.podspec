@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
   s.license      = package["license"]
   s.authors      = package["author"]
 
-  s.platforms    = { :ios => "10.0" }
+  s.platforms    = { :ios => "12.4" }
   s.source       = { :git => "https://github.com/craftzdog/react-native-quick-base64.git", :tag => "#{s.version}" }
 
   s.pod_target_xcconfig = {
@@ -18,10 +18,10 @@ Pod::Spec.new do |s|
     :WARNING_CFLAGS => "-Wno-shorten-64-to-32 -Wno-comma -Wno-unreachable-code -Wno-conditional-uninitialized -Wno-deprecated-declarations",
     :USE_HEADERMAP => "No"
   }
-  
+
   s.header_mappings_dir = "cpp"
   s.source_files = "ios/**/*.{h,m,mm}", "cpp/**/*.{h,cpp}"
-  
+
 
   s.dependency "React-Core"
 end
